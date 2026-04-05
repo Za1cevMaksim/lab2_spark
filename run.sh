@@ -1,18 +1,18 @@
 #!/bin/bash
 set -e 
-# sudo apt update && sudo apt install -y openjdk-17-jdk python3-venv > /dev/null 2>&1
+sudo apt update && sudo apt install -y openjdk-17-jdk python3-venv > /dev/null 2>&1
 
-# export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
-# export PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
 
-# if [ ! -d "venv" ]; then
-#     python3 -m venv venv
-# fi
-# source venv/bin/activate
-# pip install pyspark psutil matplotlib > /dev/null 2>&1
+if [ ! -d "venv" ]; then
+    python3 -m venv venv
+fi
+source venv/bin/activate
+pip install pyspark psutil matplotlib > /dev/null 2>&1
 
-# echo "Зависимости установлены."
-# mkdir -p results
+echo "Зависимости установлены."
+mkdir -p results
 
 
 set_replication() {
