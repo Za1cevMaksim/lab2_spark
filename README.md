@@ -14,8 +14,9 @@ https://www.kaggle.com/datasets/viridianachow/online-retail-uci-dataset
 - **Типы данных:** int, double, string, date
 
 ## Запуск
-# Дайте права на выполнение
+
 chmod +x run.sh
+
 ./run.sh
 
 ## Результаты
